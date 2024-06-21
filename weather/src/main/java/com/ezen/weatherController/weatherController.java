@@ -1,16 +1,15 @@
-package com.ezen.weather.weather;
+package com.ezen.weatherController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class TestController {
-    @GetMapping("/index")
+public class weatherController {
+    @GetMapping("/weather")
     @ResponseBody
-    public String index() {
-        return "index11111";
+    public String weather() {
+        return "웨더테스트";
     }
-    //111111
 
 }
